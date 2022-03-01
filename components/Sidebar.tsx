@@ -1,16 +1,20 @@
 import Image from "next/image";
-import foto from "../public/images/jj.jpg";
+import foto from "../public/images/rm.jpg";
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 
 const Sidebar = () => {
   return (
-    <div>
+    <>
       <Image
         src={foto}
-        alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-[50%] object-cover"
+        alt="Picture of the author"
+        className="mx-auto border rounded-full "
+        height="128px"
+        width="128px"
+        layout="intrinsic"
+        quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider">
         <span>Rado</span> Holubowski
@@ -19,7 +23,7 @@ const Sidebar = () => {
         Javascript Developer
       </p>
       <a
-        className="px-2 py-1 my-3 bg-gray-200 rounded-full flex items-center justify-center"
+        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full"
         href=""
         download="name"
       >
@@ -27,7 +31,7 @@ const Sidebar = () => {
         Download Resume
       </a>
       {/* social icons */}
-      <div className="flex justify-around my-5 text-indigo-500 w-9/12 md:w-full mx-auto">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-indigo-500 md:w-full">
         <a href="">
           <AiFillFacebook className="w-8 h-8 cursor-pointer" />
         </a>
@@ -40,7 +44,7 @@ const Sidebar = () => {
       </div>
       {/* adress */}
       <div
-        className="my-5 py-4 bg-gray-200 "
+        className="py-4 my-5 bg-gray-200 "
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center space-x-2">
@@ -50,13 +54,13 @@ const Sidebar = () => {
         <p className="my-2">radek8787@gmail.com</p>
         <p className="my-2">0044 7402040606</p>
       </div>
-      <button className="bg-gradient-to-r from-indigo-500 to-blue-500 my-2 w-8/12 rounded-full py-2 px-5 text-white">
+      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-indigo-500 to-blue-500">
         Email Me
       </button>
-      <button className="bg-gradient-to-r from-indigo-500 my-2 to-blue-500 w-8/12 rounded-full py-2 px-5 text-white">
+      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-indigo-500 to-blue-500">
         Toggle Theme
       </button>
-    </div>
+    </>
   );
 };
 
