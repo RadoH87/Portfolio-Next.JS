@@ -4,6 +4,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      body: ["Poppins", "Kaushan Script", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
