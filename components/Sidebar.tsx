@@ -1,5 +1,6 @@
 import Image from "next/image";
-import foto from "../public/images/rm.jpg";
+import Link from "next/link";
+import foto from "../public/images/rado.jpg";
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
@@ -17,7 +18,7 @@ const Sidebar = () => {
         quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-body">
-        <span>Rado</span> Holubowski
+        <span className="text-indigo-500">Rado</span> Holubowski
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">
         Javascript Developer
@@ -54,7 +55,10 @@ const Sidebar = () => {
         <p className="my-2">radek8787@gmail.com</p>
         <p className="my-2">0044 7402040606</p>
       </div>
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-indigo-500 to-blue-500">
+      <button
+        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-indigo-500 to-blue-500"
+        onClick={() => window.open("mailto:radekh8787@gmail.com")}
+      >
         Email Me
       </button>
       <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-indigo-500 to-blue-500">
