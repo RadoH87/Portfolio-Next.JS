@@ -1,6 +1,8 @@
 import {RiComputerLine} from 'react-icons/ri'
 import {Service} from "./types";
-import {AiOutlineAntDesign, AiOutlineApi, FaServer, MdDeveloperMode} from "react-icons/all";
+import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
+import { MdDeveloperMode } from "react-icons/md";
+import { FaServer } from "react-icons/fa";
 
 
 export const services: Service[] = [
