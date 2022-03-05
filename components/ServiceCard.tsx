@@ -1,17 +1,27 @@
-import {FC} from "react";
-import {Service} from "../types";
+import { FC } from "react";
+import { Service } from "../types";
 
+const ServiceCard: FC<{ service: Service }> = ({
+  service: { title, Icon, description },
+}) => {
+  {
+    /* XSS prevent function */
+  }
+  const createMarkup = () => {
+    return {
+      __html: description,
+    };
+  };
 
-const ServiceCard:FC<{service:Service}> = ({service:{title,Icon,description}}) => {
-    return (
-        <div>
-            <Icon />
-            <div>
-                <h4>{title}</h4>
-                <p>{description}</p>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="flex items-center p-2 space-x-4">
+      <Icon className="w-12 h-12 text-indigo-500" />
+      <div>
+        <h4 className="font-bold">{title}</h4>
+        <p dangerouslySetInnerHTML={createMarkup()} />
+      </div>
+    </div>
+  );
+};
 
-export default ServiceCard
+export default ServiceCard;
