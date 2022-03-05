@@ -4,7 +4,7 @@ import ServiceCard from "../components/ServiceCard";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col px-6 pt-1">
+    <div className="flex flex-col flex-grow px-6 pt-1">
       <h5 className="my-3 font-medium">
         Hi I m Radek and I m passionate about all things JavaScript. I work
         hard, I care about writing clean code and I genuinely love to learn. I m
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         that will help me progress into full-stack role.
       </h5>
       <div
-        className="p-4 mt-5 bg-gray-400"
+        className="flex-grow p-4 mt-5 bg-gray-400"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">What I Offer</h6>
