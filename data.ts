@@ -2,7 +2,7 @@ import { RiComputerLine } from "react-icons/ri";
 import { Service, Stage } from "./types";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
-import { FaServer, FaDatabase } from "react-icons/fa";
+import { FaServer, FaDatabase, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiNodedotjs, SiExpress, SiTypescript } from "react-icons/si";
 
@@ -92,11 +92,11 @@ export const stages: Stage[] = [
     id: 5,
   },
   {
-    Icon: SiTypescript,
-    title: "TypeScript",
-    date: "10.01 - 13.02.2022",
+    Icon: FaReact,
+    title: "React",
+    date: "28.02 - 03.04.2022",
     about:
       "Lorem ipsum dolor sit amet consectetur adipisicing elitCupiditate ex labore maiores provident sit soluta veniam Aliquamat cumque ea ex exercitationem ipsa molestiae placeat quae quaeratrepudiandae similique totam ",
-    id: 5,
+    id: 6,
   },
 ];
