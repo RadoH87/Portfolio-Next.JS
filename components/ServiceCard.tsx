@@ -1,9 +1,7 @@
 import { FC } from "react";
 import { Service } from "../types";
 
-const ServiceCard: FC<{ service: Service }> = ({
-  service: { title, Icon, description },
-}) => {
+const ServiceCard: FC<Service> = ({ title, Icon, description }) => {
   {
     /* XSS prevent function */
   }
