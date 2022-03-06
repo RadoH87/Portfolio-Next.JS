@@ -22,7 +22,7 @@ const Home: NextPage = () => {
               key={service.id}
               className="bg-gray-200 rounded-lg lg:col-span-1"
             >
-              <ServiceCard service={service} />
+              <ServiceCard {...service} />
             </div>
           ))}
         </div>
