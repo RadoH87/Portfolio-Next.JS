@@ -4,6 +4,7 @@
 
 /* TODO use tailwind */
 body {
-  background-color: #0f1624;
   font-family: sans-serif;
+
+  color: #354358;
 }
