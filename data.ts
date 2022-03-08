@@ -1,5 +1,5 @@
 import { RiComputerLine } from "react-icons/ri";
-import { Service, Stage } from "./types";
+import { Project, Service, Stage } from "./types";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
 import { FaServer, FaDatabase, FaReact } from "react-icons/fa";
@@ -98,5 +98,44 @@ export const stages: Stage[] = [
     about:
       "Lorem ipsum dolor sit amet consectetur adipisicing elitCupiditate ex labore maiores provident sit soluta veniam Aliquamat cumque ea ex exercitationem ipsa molestiae placeat quae quaeratrepudiandae similique totam ",
     id: 6,
+  },
+];
+
+export const projects: Project[] = [
+  {
+    name:'MERN',
+    description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+    image_path:'sfds sifiidsofo kodskofkoos ksdofk ',
+    deploy_url:'dsfdsfdsfdsf sdf sdf dsfdsf ',
+    github_url:'sdffdf dsf dsfsdfdsf dsfsdf',
+    category: ['mongo','express','react','node'],
+    tech_stacks:['React','Tailwind','Mongoose'],
+  },
+  {
+    name:'Video Player',
+    description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+    image_path:'sfds sifiidsofo kodskofkoos ksdofk ',
+    deploy_url:'dsfdsfdsfdsf sdf sdf dsfdsf ',
+    github_url:'sdffdf dsf dsfsdfdsf dsfsdf',
+    category: ['mongo','express','react','next'],
+    tech_stacks:['React','Tailwind','Mongoose','Next'],
+  },
+  {
+    name:'Task Manager',
+    description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+    image_path:'sfds sifiidsofo kodskofkoos ksdofk ',
+    deploy_url:'dsfdsfdsfdsf sdf sdf dsfdsf ',
+    github_url:'sdffdf dsf dsfsdfdsf dsfsdf',
+    category: ['mongo','nest','react','node'],
+    tech_stacks:['React','Tailwind','Mongoose','Prisma'],
+  },
+  {
+    name:'Portfolio',
+    description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+    image_path:'sfds sifiidsofo kodskofkoos ksdofk ',
+    deploy_url:'dsfdsfdsfdsf sdf sdf dsfdsf ',
+    github_url:'sdffdf dsf dsfsdfdsf dsfsdf',
+    category: ['next','react'],
+    tech_stacks:['Next','React','Tailwind',],
   },
 ];
