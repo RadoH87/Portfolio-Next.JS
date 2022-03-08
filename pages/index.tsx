@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         that will help me progress into full-stack role.
       </h5>
       <div
-        className="flex-grow p-4 mt-5 bg-gray-400"
+        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">What I Offer</h6>
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-gray-200 rounded-lg lg:col-span-1"
+              className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
             >
               <ServiceCard {...service} />
             </div>

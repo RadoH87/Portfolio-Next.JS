@@ -1,11 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import foto from "../public/images/rado.jpg";
+import foto from "../public/images/rr.jpg";
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
+import { useTheme } from "next-themes";
 
 const Sidebar = () => {
+  const { theme, setTheme } = useTheme();
+  const changedTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <>
       <Image
@@ -20,11 +26,11 @@ const Sidebar = () => {
       <h3 className="my-4 text-3xl font-medium tracking-wider font-body">
         <span className="text-indigo-500">Rado</span> Holubowski
       </h3>
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">
         Javascript Developer
       </p>
       <a
-        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full"
+        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
         href=""
         download="name"
       >
@@ -43,9 +49,9 @@ const Sidebar = () => {
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
       </div>
-      {/* adress */}
+      {/* Contacts */}
       <div
-        className="py-4 my-5 bg-gray-200 "
+        className="py-4 my-5 bg-gray-200 dark:bg-dark-200"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center space-x-2">
@@ -61,7 +67,10 @@ const Sidebar = () => {
       >
         Email Me
       </button>
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-indigo-500 to-blue-500">
+      <button
+        onClick={changedTheme}
+        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-indigo-500 to-blue-500"
+      >
         Toggle Theme
       </button>
     </>

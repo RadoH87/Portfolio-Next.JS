@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold text-indigo-500 border-b-4 border-indigo-500 md:text-2xl">
+      <span className="text-xl font-bold text-indigo-500 border-b-4 border-indigo-500 md:text-2xl dark:text-white">
         {activeItem}
       </span>
       <div className="flex space-x-5 text-lg">
