@@ -5,6 +5,13 @@
 /* TODO use tailwind */
 body {
   font-family: sans-serif;
-
   color: #354358;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-linear-gradient(#6366f1, #3b82f6);
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0px;
 }
