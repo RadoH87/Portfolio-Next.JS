@@ -103,6 +103,7 @@ export const stages: Stage[] = [
 
 export const projects: Project[] = [
   {
+    id: 1,
     name: "MERN",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
@@ -110,9 +111,10 @@ export const projects: Project[] = [
     deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
     github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
     category: ["mongo", "express", "react", "node"],
-    tech_stacks: ["React", "Tailwind", "Mongoose"],
+    techs_stack: ["React", "Tailwind", "Mongoose"],
   },
   {
+    id: 2,
     name: "Video Player",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
@@ -120,9 +122,10 @@ export const projects: Project[] = [
     deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
     github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
     category: ["mongo", "express", "react", "next"],
-    tech_stacks: ["React", "Tailwind", "Mongoose", "Next"],
+    techs_stack: ["React", "Tailwind", "Mongoose", "Next"],
   },
   {
+    id: 3,
     name: "Task Manager",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
@@ -130,9 +133,10 @@ export const projects: Project[] = [
     deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
     github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
     category: ["mongo", "nest", "react", "node"],
-    tech_stacks: ["React", "Tailwind", "Mongoose", "Prisma"],
+    techs_stack: ["React", "Tailwind", "Mongoose", "Prisma"],
   },
   {
+    id: 4,
     name: "Portfolio",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
@@ -140,6 +144,50 @@ export const projects: Project[] = [
     deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
     github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
     category: ["next", "react"],
-    tech_stacks: ["Next", "React", "Tailwind"],
+    techs_stack: ["Next", "React", "Tailwind"],
+  },
+  {
+    id: 5,
+    name: "Cookie-Maker",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    image_path: "/images/exe5.jpg",
+    deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
+    github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
+    category: ["next", "react"],
+    techs_stack: ["Next", "React", "Tailwind"],
+  },
+  {
+    id: 6,
+    name: "Warrior",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    image_path: "/images/exe11.jpg",
+    deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
+    github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
+    category: ["next", "react"],
+    techs_stack: ["Next", "React", "Tailwind"],
+  },
+  {
+    id: 7,
+    name: "Weather-App",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    image_path: "/images/exe10.jpg",
+    deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
+    github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
+    category: ["next", "react"],
+    techs_stack: ["Next", "React", "Tailwind"],
+  },
+  {
+    id: 8,
+    name: "Hulu-2.0",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    image_path: "/images/exe8.jpg",
+    deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
+    github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
+    category: ["next", "react"],
+    techs_stack: ["Next", "React", "Tailwind"],
   },
 ];

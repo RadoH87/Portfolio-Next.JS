@@ -5,7 +5,8 @@ export interface Project {
   deployed_url: string;
   github_url: string;
   category: Category[];
-  tech_stacks: string[];
+  techs_stack: string[];
+  id: number;
 }
 
 export type Category =
