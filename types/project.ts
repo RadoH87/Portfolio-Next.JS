@@ -17,5 +17,5 @@ export type Category =
   | "react"
   | "next"
   | "nest"
-  | "mongo"
-  | "mysql";
+  | "mongoDB"
+  | "MYSQL";

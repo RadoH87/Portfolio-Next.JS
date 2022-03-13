@@ -110,7 +110,7 @@ export const projects: Project[] = [
     image_path: "/images/exe1.jpg",
     deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
     github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
-    category: ["mongo", "express", "react", "node"],
+    category: ["mongoDB", "express", "react", "node"],
     techs_stack: ["React", "Tailwind", "Mongoose"],
   },
   {
@@ -121,7 +121,7 @@ export const projects: Project[] = [
     image_path: "/images/exe2.jpg",
     deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
     github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
-    category: ["mongo", "express", "react", "next"],
+    category: ["mongoDB", "express", "react", "next"],
     techs_stack: ["React", "Tailwind", "Mongoose", "Next"],
   },
   {
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     image_path: "/images/exe3.jpg",
     deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
     github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
-    category: ["mongo", "nest", "react", "node"],
+    category: ["mongoDB", "nest", "react", "node"],
     techs_stack: ["React", "Tailwind", "Mongoose", "Prisma"],
   },
   {
