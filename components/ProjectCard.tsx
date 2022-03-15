@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { Project } from "../types";
+import Image from "next/image";
 
 const ProjectCard: FC<Project> = ({
   name,
@@ -16,11 +17,14 @@ const ProjectCard: FC<Project> = ({
 
   return (
     <div className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
-      <img
+      <Image
         src={image_path}
         alt={name}
         className="cursor-pointer"
         onClick={() => setShowModalDetail(true)}
+        width="300"
+        height="150"
+        layout="responsive"
       />
       <p className="my-2 text-center">{name}</p>
       {/* modal-project-card */}
@@ -28,7 +32,13 @@ const ProjectCard: FC<Project> = ({
         <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 gap-x-12 md:grid-cols-2 dark:text-white dark:bg-dark-100">
           {/* left section of modal*/}
           <section>
-            <img src={image_path} alt={name} />
+            <Image
+              src={image_path}
+              alt={name}
+              width="300"
+              height="150"
+              layout="responsive"
+            />
             <div className="flex justify-center my-4 space-x-3">
               <a
                 href={github_url}

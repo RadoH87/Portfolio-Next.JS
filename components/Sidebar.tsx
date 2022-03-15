@@ -18,9 +18,9 @@ const Sidebar = () => {
         src={foto}
         alt="Picture of the author"
         className="mx-auto border rounded-full "
-        height="128px"
-        width="128px"
-        layout="intrinsic"
+        height="125px"
+        width="125px"
+        layout="fixed"
         quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-body">
