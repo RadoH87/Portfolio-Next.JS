@@ -16,7 +16,7 @@ const ProjectCard: FC<Project> = ({
   const [showModalDetail, setShowModalDetail] = useState(false);
 
   return (
-    <div className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
+    <>
       <Image
         src={image_path}
         alt={name}
@@ -78,7 +78,7 @@ const ProjectCard: FC<Project> = ({
           </button>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
