@@ -6,31 +6,38 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInR, stagger } from "../animations";
 
-const ProjectCard: FC<Project> = ({
-  name,
-  image_path,
-  description,
-  deployed_url,
-  category,
-  github_url,
-  techs_stack,
+const ProjectCard: FC<{
+  project: Project;
+  showModalDetail: number | null;
+  setShowModalDetail: (id: null | number) => void;
+}> = ({
+  project: {
+    name,
+    image_path,
+    description,
+    deployed_url,
+    category,
+    github_url,
+    techs_stack,
+    id,
+  },
+  showModalDetail,
+  setShowModalDetail,
 }) => {
-  const [showModalDetail, setShowModalDetail] = useState(false);
-
   return (
     <div>
       <Image
         src={image_path}
         alt={name}
         className="cursor-pointer"
-        onClick={() => setShowModalDetail(true)}
+        onClick={() => setShowModalDetail(id)}
         width="300"
         height="150"
         layout="responsive"
       />
       <p className="my-2 text-center">{name}</p>
       {/* modal-project-card */}
-      {showModalDetail && (
+      {showModalDetail === id && (
         <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 gap-x-12 md:grid-cols-2 dark:text-white dark:bg-dark-100">
           {/* left section of modal*/}
           <motion.section
@@ -96,7 +103,7 @@ const ProjectCard: FC<Project> = ({
           </motion.section>
           {/* closing Icon */}
           <button
-            onClick={() => setShowModalDetail(false)}
+            onClick={() => setShowModalDetail(null)}
             className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
           >
             <MdClose size={30} />

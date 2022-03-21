@@ -9,6 +9,7 @@ import { Category } from "../types";
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
+  const [showModalDetail, setShowModalDetail] = useState<number | null>(null);
 
   const handlerFilterCategory = (category: Category | "all") => {
     if (category === "all") {
@@ -47,7 +48,11 @@ const Projects = () => {
             variants={fadeInR}
             key={project.id}
           >
-            <ProjectCard {...project} />
+            <ProjectCard
+              project={project}
+              showModalDetail={showModalDetail}
+              setShowModalDetail={setShowModalDetail}
+            />
           </motion.div>
         ))}
       </motion.div>
