@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <div className="grid gap-6 my-3 md:grid-cols-2">
           {services.map((service) => (
             <motion.div
-              variants={fadeInR}
+              variants={fadeInUp}
               key={service.id}
               className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1"
             >

@@ -30,7 +30,7 @@ const ProjectsNavbar: FC<{ handlerFilterCategory: Function; active: string }> =
           <NavItem value="mongoDB" {...props} />
           <NavItem value="MYSQL" {...props} />
         </div>
-        <div className="absolute top-0 right-0 w-1/12 h-10 dark:bg-gradient-to-l dark:from-[#0F1115] to-transparent" />
+        <div className="absolute top-0 right-0 w-1/12 h-10 dark:bg-gradient-to-l dark:from-[#0a0b0e] to-transparent" />
       </div>
     );
   };
