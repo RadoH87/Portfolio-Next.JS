@@ -9,6 +9,19 @@ export const fadeInUp = {
   },
 };
 
+export const fadeInR = {
+  initial: {
+    scale: 0,
+  },
+  animate: {
+    scale: 1,
+    // rotate: 360,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
 export const stagger = {
   initial: {},
   animate: {
