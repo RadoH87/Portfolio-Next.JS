@@ -7,8 +7,8 @@ export const NavItem: FC<{
   active: string;
 }> = ({ value, handlerFilterCategory, active }) => {
   let className =
-    "capitalize transition duration-100 transform cursor-pointer hover:scale-125 hover:text-indigo-500";
-  if (active === value) className += " text-indigo-500";
+    "capitalize transition duration-100 transform cursor-pointer hover:scale-125 hover:text-orange-500";
+  if (active === value) className += " text-orange-500";
   return (
     <li className={className} onClick={() => handlerFilterCategory(value)}>
       {value}

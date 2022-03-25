@@ -38,7 +38,7 @@ const ProjectCard: FC<{
       <p className="my-2 text-center">{name}</p>
       {/* modal-project-card */}
       {showModalDetail === id && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 gap-x-12 md:grid-cols-2 dark:text-white dark:bg-dark-100">
+        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100  gap-x-12 md:grid-cols-2 dark:text-white dark:bg-dark-100">
           {/* left section of modal*/}
           <motion.section
             variants={stagger}
@@ -78,15 +78,15 @@ const ProjectCard: FC<{
             initial="initial"
             animate="animate"
           >
-            <motion.h2
+            <motion.h3
               variants={fadeInR}
               className="mb-3 text-xl font-medium md:text-2xl"
             >
               {name}
-            </motion.h2>
-            <motion.h3 variants={fadeInR} className="mb-3 font-medium">
-              {description}
             </motion.h3>
+            <motion.h4 variants={fadeInR} className="mb-3 font-medium">
+              {description}
+            </motion.h4>
             <motion.div
               variants={fadeInR}
               className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider rounded-sm"

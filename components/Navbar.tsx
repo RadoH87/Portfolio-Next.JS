@@ -14,7 +14,7 @@ const NavItem: FC<NavItemProps> = ({
       <a>
         <span
           onClick={() => setActiveItem(name)}
-          className="hover:text-indigo-500"
+          className="hover:text-orange-500"
         >
           {name}
         </span>
@@ -35,8 +35,8 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <div className="flex justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold text-indigo-500 border-b-4 border-indigo-500 md:text-2xl dark:text-white">
+    <div className="flex justify-between px-5 py-3 my-3 font-body">
+      <span className="text-xl font-bold border-b-4 border-orange-500 md:text-2xl dark:text-white">
         {activeItem}
       </span>
       <div className="flex space-x-5 text-lg">

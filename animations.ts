@@ -17,7 +17,7 @@ export const fadeInR = {
     scale: 1,
     // rotate: 360,
     transition: {
-      duration: 0.8,
+      duration: 1,
     },
   },
 };
@@ -47,6 +47,35 @@ export const routeAnimation = {
     transition: {
       delay: 0.1,
       ease: "easeInOut",
+    },
+  },
+};
+
+export const cardVariants = {
+  offscreen: { y: 150 },
+  onscreen: {
+    y: 0,
+
+    transition: {
+      type: "spring",
+
+      bounce: 0.4,
+      duration: 1,
+    },
+  },
+};
+
+export const charAnimation = {
+  initial: {
+    opacity: 0,
+    x: -200,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+
+    transition: {
+      duration: 0.8,
     },
   },
 };

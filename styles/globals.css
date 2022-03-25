@@ -9,9 +9,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: -webkit-linear-gradient(#6366f1, #3b82f6);
+  background: -webkit-linear-gradient(#f97316, #111827);
 }
 ::-webkit-scrollbar {
   width: 8px;
   height: 0px;
+}
+
+h3 {
+  background: -webkit-linear-gradient(#f97316, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

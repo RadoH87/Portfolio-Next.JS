@@ -1,30 +1,27 @@
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { fadeInR, stagger } from "../animations";
+import { fadeInR, cardVariants, stagger } from "../animations";
 import { Stage } from "../types";
 
 const StageCard: FC<Stage> = ({ Icon, about, date, title }) => {
   return (
-    <>
-      <h3 className="my-5 text-2xl font-bold text-center font-body">{title}</h3>
-      <motion.div
-        variants={stagger}
-        initial="initial"
-        animate="animate"
-        className="relative pl-5 before:absolute before:-left-[58px] before:top-0 before:w-16 before:h-16 before:border-4 before:bg-indigo-500 before:rounded-full before:border-white before:shadow-inner before:shadow-white before:dark:border-dark-500 before:dark:shadow-dark-500 "
-      >
-        <Icon className="absolute w-7 h-7 top-[18.25px] -left-[41px] text-white" />
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={cardVariants}
+      viewport={{ once: true }}
+      className="relative   pl-5 before:absolute before:-left-[60px] before:top-0 before:w-16 before:h-16 before:border-4 before:bg-orange-500 before:rounded-full before:border-white before:shadow-inner before:shadow-white before:dark:border-dark-500 before:dark:shadow-dark-500 "
+    >
+      <div>
+        <Icon className="absolute w-7 h-7 top-[18.25px] -left-[42px] text-white dark:text-gray-900" />
+      </div>
+      <motion.div className="col-span-2 p-2 bg-gray-200 rounded-lg shadow-md shadow-gray-400 dark:shadow-orange-500/50 dark:bg-dark-200 md:col-span-1">
+        <h3 className="my-5 text-2xl font-bold font-body">{title}</h3>
 
-        <h4 className="mb-3 text-lg font-semibold font-body">{date}</h4>
+        <h4 className="mb-3 text-sm opacity-70">{date}</h4>
         <p className="mb-4">{about}</p>
-        <ul className="pl-5 list-disc">
-          <li>dsfdsfdsf</li>
-          <li>dsfdsf</li>
-          <li>sdfdsfsd</li>
-          <li>dsfdsfdsf</li>
-        </ul>
       </motion.div>
-    </>
+    </motion.div>
   );
 };
 
