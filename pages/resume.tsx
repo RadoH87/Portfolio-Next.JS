@@ -12,7 +12,7 @@ const resume = () => {
         initial="initial"
         animate="animate"
       >
-        <motion.h3 className="flex pb-4 text-4xl font-bold capitalize md:text-6xl justify-evenly font-body ">
+        <motion.h3 className="flex pb-4 text-4xl font-bold capitalize md:text-5xl justify-evenly font-body ">
           {sentence.split("").map((letter, index) => (
             <motion.span className="" variants={charAnimation} key={index}>
               {letter}
