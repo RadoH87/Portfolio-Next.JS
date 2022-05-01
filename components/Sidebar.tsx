@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import foto from "../public/images/rr.jpg";
 import {AiFillGithub, AiFillLinkedin, AiFillFacebook} from "react-icons/ai";
 import {GoLocation} from "react-icons/go";
@@ -27,7 +26,7 @@ const Sidebar = () => {
                 <span className="text-orange-500">Radek</span> Holubowski
             </h3>
             <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">
-                Javascript Developer
+                JavaScript Developer
             </p>
             <a
                 className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full dark:bg-dark-200"
@@ -39,13 +38,13 @@ const Sidebar = () => {
             </a>
             {/* social icons */}
             <div className="flex justify-around w-9/12 mx-auto my-5 text-orange-500 md:w-full">
-                <a href="">
+                <a href="#">
                     <AiFillFacebook className="w-8 h-8 cursor-pointer"/>
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/radoslawholubowski/">
                     <AiFillLinkedin className="w-8 h-8 cursor-pointer"/>
                 </a>
-                <a href="">
+                <a href="https://github.com/RadoH87">
                     <AiFillGithub className="w-8 h-8 cursor-pointer"/>
                 </a>
             </div>
