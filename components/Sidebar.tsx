@@ -1,5 +1,5 @@
 import Image from "next/image";
-import foto from "../public/images/rr.jpg";
+import foto from "../public/assets/images/rr.jpg";
 import {AiFillGithub, AiFillLinkedin, AiFillFacebook} from "react-icons/ai";
 import {GoLocation} from "react-icons/go";
 import {GiTie} from "react-icons/gi";
@@ -30,8 +30,8 @@ const Sidebar = () => {
             </p>
             <a
                 className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full dark:bg-dark-200"
-                href=""
-                download="name"
+                href="/assets/RadoDevCV.pdf"
+                download="RadoDevCV.pdf"
             >
                 <GiTie className="w-6 h-6"/>
                 Download Resume
