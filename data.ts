@@ -186,7 +186,7 @@ export const projects: Project[] = [
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         image_path: "/images/exe4.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
-        github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
+        github_url: "https://github.com/RadoH87/Portfolio-Next.JS",
         category: ["next", "react"],
         techs_stack: ["Next", "React", "Tailwind"],
     },
