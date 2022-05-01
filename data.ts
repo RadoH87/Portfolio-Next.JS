@@ -183,7 +183,7 @@ export const projects: Project[] = [
         id: 4,
         name: "Portfolio",
         description:
-            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+            "Developer Portfolio made with Next JS Framer Motion and TypeScript.",
         image_path: "/images/exe4.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
         github_url: "https://github.com/RadoH87/Portfolio-Next.JS",
