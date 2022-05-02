@@ -151,7 +151,7 @@ export const projects: Project[] = [
         name: "MERN",
         description:
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        image_path: "/images/exe1.jpg",
+        image_path: "/assets/images/exe1.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
         github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
         category: ["mongoDB", "express", "react", "node"],
@@ -162,7 +162,7 @@ export const projects: Project[] = [
         name: "Video Player",
         description:
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        image_path: "/images/exe2.jpg",
+        image_path: "/assets/images/exe2.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
         github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
         category: ["mongoDB", "express", "react", "next"],
@@ -173,7 +173,7 @@ export const projects: Project[] = [
         name: "Task Manager",
         description:
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        image_path: "/images/exe3.jpg",
+        image_path: "/assets/images/exe3.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
         github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
         category: ["mongoDB", "nest", "react", "node"],
@@ -184,7 +184,7 @@ export const projects: Project[] = [
         name: "Portfolio",
         description:
             "Developer Portfolio made with Next JS Framer Motion and TypeScript.",
-        image_path: "/images/exe4.jpg",
+        image_path: "/assets/images/exe4.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
         github_url: "https://github.com/RadoH87/Portfolio-Next.JS",
         category: ["next", "react"],
@@ -195,7 +195,7 @@ export const projects: Project[] = [
         name: "Cookie-Maker",
         description:
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        image_path: "/images/exe5.jpg",
+        image_path: "/assets/images/exe5.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
         github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
         category: ["next", "react"],
@@ -206,7 +206,7 @@ export const projects: Project[] = [
         name: "Warrior",
         description:
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        image_path: "/images/exe11.jpg",
+        image_path: "/assets/images/exe11.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
         github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
         category: ["next", "react"],
@@ -217,7 +217,7 @@ export const projects: Project[] = [
         name: "Weather-App",
         description:
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        image_path: "/images/exe10.jpg",
+        image_path: "/assets/images/exe10.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
         github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
         category: ["next", "react"],
@@ -228,7 +228,7 @@ export const projects: Project[] = [
         name: "Hulu-2.0",
         description:
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        image_path: "/images/exe8.jpg",
+        image_path: "/assets/images/exe8.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
         github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
         category: ["next", "react"],
