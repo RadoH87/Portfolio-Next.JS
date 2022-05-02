@@ -16,7 +16,7 @@ const StageCard: FC<Stage> = ({Icon, about, date, title}) => {
           <Icon className="absolute w-7 h-7 top-[44.25px] -left-[42px] text-white dark:text-gray-900"/>
         </div>
         <motion.div
-            className="col-span-2 p-2 bg-gray-200 rounded-lg shadow-md shadow-gray-400 dark:shadow-orange-500/50 dark:bg-dark-200 md:col-span-1">
+            className="col-span-2 p-6 bg-gray-200 rounded-lg shadow-md shadow-gray-400 dark:shadow-orange-500/50 dark:bg-dark-200 md:col-span-1">
           <h3 className="my-5 text-2xl font-bold font-body">{title}</h3>
 
           <h4 className="mb-3 text-sm opacity-70">{date}</h4>
