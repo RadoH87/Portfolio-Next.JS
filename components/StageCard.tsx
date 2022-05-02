@@ -21,7 +21,7 @@ const StageCard: FC<Stage> = ({Icon, about, date, title}) => {
 
           <h4 className="mb-3 text-sm opacity-70">{date}</h4>
           <ul className="mb-4">{about.map(desc => <li key={desc}
-                                                      className='list-disc  dark:marker:text-orange-500 pb-1.5 capitalize'>{desc}</li>)}</ul>
+                                                      className='list-disc tracking-normal  dark:marker:text-orange-500 pb-1.5 capitalize'>{desc}</li>)}</ul>
         </motion.div>
     </motion.div>
   );
