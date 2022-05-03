@@ -1,6 +1,6 @@
 import {RiComputerLine} from "react-icons/ri";
 import {Project, Service, Stage} from "./types";
-import {AiOutlineAntDesign, AiOutlineApi,AiFillGithub} from "react-icons/ai";
+import {AiFillGithub, AiOutlineAntDesign, AiOutlineApi} from "react-icons/ai";
 import {MdDeveloperMode} from "react-icons/md";
 import {FaDatabase, FaReact, FaServer} from "react-icons/fa";
 import {IoLogoJavascript} from "react-icons/io5";
@@ -148,14 +148,15 @@ export const stages: Stage[] = [
 export const projects: Project[] = [
     {
         id: 1,
-        name: "MERN",
+
+        name: "Portfolio",
         description:
-            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        image_path: "/assets/images/exe1.jpg",
+            "Developer Portfolio made with Next JS Framer Motion and TypeScript.",
+        image_path: "/assets/images/Next-portfolio.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
-        github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
-        category: ["mongoDB", "express", "react", "node"],
-        techs_stack: ["React", "Tailwind", "Mongoose"],
+        github_url: "https://github.com/RadoH87/Portfolio-Next.JS",
+        category: ["next", "react"],
+        techs_stack: ["Next", "React", "Tailwind"],
     },
     {
         id: 2,
@@ -181,14 +182,14 @@ export const projects: Project[] = [
     },
     {
         id: 4,
-        name: "Portfolio",
+        name: "MERN",
         description:
-            "Developer Portfolio made with Next JS Framer Motion and TypeScript.",
-        image_path: "/assets/images/exe4.jpg",
+            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        image_path: "/assets/images/exe1.jpg",
         deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
-        github_url: "https://github.com/RadoH87/Portfolio-Next.JS",
-        category: ["next", "react"],
-        techs_stack: ["Next", "React", "Tailwind"],
+        github_url: "sdffdf dsf dsfsdfdsf dsfsdf",
+        category: ["mongoDB", "express", "react", "node"],
+        techs_stack: ["React", "Tailwind", "Mongoose"],
     },
     {
         id: 5,
