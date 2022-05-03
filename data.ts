@@ -153,7 +153,7 @@ export const projects: Project[] = [
         description:
             "Developer Portfolio made with Next JS Framer Motion and TypeScript.",
         image_path: "/assets/images/Next-portfolio.jpg",
-        deployed_url: "dsfdsfdsfdsf sdf sdf dsfdsf ",
+        deployed_url: "https://portfolio-next-js-radoh87.vercel.app/ ",
         github_url: "https://github.com/RadoH87/Portfolio-Next.JS",
         category: ["next", "react"],
         techs_stack: ["Next", "React", "Tailwind"],
