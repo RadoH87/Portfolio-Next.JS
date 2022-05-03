@@ -1,22 +1,21 @@
-import { FC, useState } from "react";
-import { AiFillGithub, AiFillProject } from "react-icons/ai";
-import { MdClose } from "react-icons/md";
-import { Project } from "../types";
+import {FC} from "react";
+import {AiFillGithub, AiFillProject} from "react-icons/ai";
+import {MdClose} from "react-icons/md";
+import {Project} from "../types";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { fadeInR, stagger } from "../animations";
+import {motion} from "framer-motion";
+import {fadeInR, stagger} from "../animations";
 
 const ProjectCard: FC<{
   project: Project;
   showModalDetail: number | null;
   setShowModalDetail: (id: null | number) => void;
 }> = ({
-  project: {
-    name,
-    image_path,
-    description,
+        project: {
+          name,
+          image_path,
+          description,
     deployed_url,
-    category,
     github_url,
     techs_stack,
     id,
