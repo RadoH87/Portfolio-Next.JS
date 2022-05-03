@@ -1,6 +1,6 @@
 import {RiComputerLine} from "react-icons/ri";
 import {Project, Service, Stage} from "./types";
-import {AiOutlineAntDesign, AiOutlineApi} from "react-icons/ai";
+import {AiOutlineAntDesign, AiOutlineApi,AiFillGithub} from "react-icons/ai";
 import {MdDeveloperMode} from "react-icons/md";
 import {FaDatabase, FaReact, FaServer} from "react-icons/fa";
 import {IoLogoJavascript} from "react-icons/io5";
@@ -12,14 +12,14 @@ export const services: Service[] = [
         Icon: RiComputerLine,
         title: "Javascript Developer",
         description:
-            "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>  and <b>React.js</b>",
+            "I can build scalable SPA using <b> HTML</b>,<b>CSS</b>  and <b>React.js</b>",
         id: 1,
     },
     {
         Icon: FaServer,
-        title: "backend Developer",
+        title: "Backend Developer",
         description:
-            "Handle database, server, api using <b>Express</b> & other popular frameworks",
+            "Handle database, server, api using <b>Express</b> ",
         id: 2,
     },
     {
@@ -29,24 +29,24 @@ export const services: Service[] = [
         id: 3,
     },
     {
-        Icon: MdDeveloperMode,
-        title: "Competitive Developer",
+        Icon: AiFillGithub,
+        title: "Git/GitHub",
         description:
-            "A daily problem solver in <b>HackerRank</b> & <b>Leet Code</b>",
+            "Work with local and remote repositories",
         id: 4,
     },
     {
         Icon: AiOutlineAntDesign,
         title: "UI/UX Designer",
         description:
-            "Stunning user interface designer using <b>Figma</b> & <b>Framer</b>",
+            "User interface designer using <b>Figma</b> & <b>Framer</b>",
         id: 5,
     },
     {
-        Icon: RiComputerLine,
-        title: "Whatever",
+        Icon: MdDeveloperMode,
+        title: "Software Testing",
         description:
-            "Lorem ipsum dolor sit amet, consectetur sfdsdfdsfds sdfdsfdsfdsfds dsfdsfdsf",
+            "Basic Concepts of Software Testing",
         id: 6,
     },
 ];
