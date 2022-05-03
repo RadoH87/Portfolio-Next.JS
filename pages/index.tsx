@@ -14,8 +14,9 @@ const Home: NextPage = () => {
             className="flex flex-col flex-grow px-6 pt-1"
         >
             <h5 className="my-3 text-base font-medium ">
-                Hi I'm Radek and I'm passionate about all things JavaScript. I work
-                hard, I care about writing clean code and I genuinely love to learn. I'm currently looking for the right
+                Hi I am Radek and I am passionate about all things JavaScript. I work
+                hard, I care about writing clean code and I genuinely love to learn. I am currently looking for the
+                right
                 opportunity to work in an environment
                 that will help me progress into full-stack role.
             </h5>
