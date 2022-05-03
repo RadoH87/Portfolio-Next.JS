@@ -3,6 +3,7 @@ import {services} from "../data";
 import ServiceCard from "../components/ServiceCard";
 import {motion} from "framer-motion";
 import {fadeInUp, routeAnimation, stagger} from "../animations";
+import Head from 'next/head'
 
 const Home: NextPage = () => {
     return (
@@ -13,13 +14,18 @@ const Home: NextPage = () => {
             exit="exit"
             className="flex flex-col flex-grow px-6 pt-1"
         >
-            <h5 className="my-3 text-base font-medium ">
+            <h6 className="my-3 text-base font-medium ">
+                <Head>
+                    <title>
+                        Web Developer | Portfolio | Radek
+                    </title>
+                </Head>
                 Hi I am Radek and I am passionate about all things JavaScript. I work
                 hard, I care about writing clean code and I genuinely love to learn. I am currently looking for the
                 right
                 opportunity to work in an environment
                 that will help me progress into full-stack role.
-            </h5>
+            </h6>
             <motion.div
                 variants={stagger}
                 initial="initial"

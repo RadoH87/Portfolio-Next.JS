@@ -5,6 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 import ProjectsNavbar from "../components/ProjectsNavbar";
 import {projects as projectsData} from "../data";
 import {Category} from "../types";
+import Head from "next/head";
 
 const Projects = () => {
     const [projects, setProjects] = useState(projectsData);
@@ -32,6 +33,11 @@ const Projects = () => {
             exit="exit"
             className="px-5 py-2 lg:overflow-y-scroll bg-white lg:h-[70vh] dark:bg-dark-100"
         >
+            <Head>
+                <title>
+                    Web Developer | Projects | Radek
+                </title>
+            </Head>
             <ProjectsNavbar
                 handlerFilterCategory={handlerFilterCategory}
                 active={active}

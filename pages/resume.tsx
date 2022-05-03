@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { charAnimation, routeAnimation, stagger } from "../animations";
 import StageCard from "../components/StageCard";
 import { stages } from "../data";
+import Head from "next/head";
 const resume = () => {
   const sentence: string = "my journey";
   return (
@@ -12,6 +13,11 @@ const resume = () => {
         initial="initial"
         animate="animate"
       >
+          <Head>
+              <title>
+                  Web Developer | Resume | Radek
+              </title>
+          </Head>
         <motion.h3 className="flex pb-4 text-4xl font-bold capitalize md:text-5xl justify-evenly font-body ">
           {sentence.split("").map((letter, index) => (
             <motion.span className="" variants={charAnimation} key={index}>
