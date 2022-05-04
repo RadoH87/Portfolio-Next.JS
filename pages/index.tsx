@@ -14,7 +14,7 @@ const Home: NextPage = () => {
             exit="exit"
             className="flex flex-col flex-grow px-6 pt-1"
         >
-            <h6 className="my-3 text-base font-medium ">
+            <h2 className="my-3 text-base font-medium ">
                 <Head>
                     <title>
                         Web Developer | Portfolio | Radek
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
                 right
                 opportunity to work in an environment
                 that will help me progress into full-stack role.
-            </h6>
+            </h2>
             <motion.div
                 variants={stagger}
                 initial="initial"
